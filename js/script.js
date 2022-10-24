@@ -27,13 +27,17 @@ let indexFizzBuzz;
 for (i = 0; i < 100; i++) {
     console.log(i)
     eleSquares.innerHTML += `<div class=".sq-number">${i}</div>`
-}
-
- /*  if (i / 3) {
-        indexFizz = i;
-        console.log(indexFizz);
-        eleSquares.innerHTML += `<div class=".sq-fizz">Fizz</div>`;
-    } else if (i / 5) {
+    
+    if (i % 3 == 0) {
+        console.log(i)
+        eleSquares.innerHTML += `<div class=".sq-number">Fizz</div>`
+    }  
+    
+}/* else if (i / 5) {
+    indexFizz = i;
+    console.log(indexFizz);
+    eleSquares.innerHTML += `<div class=".sq-fizz">Fizz</div>`;
+    
         indexBuzz = i;
         console.log(indexBuzz);
         eleSquares.innerHTML += `<div class=".sq-buzz">Buzz</div>`;
