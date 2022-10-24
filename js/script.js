@@ -25,9 +25,9 @@ let indexBuzz;
 let indexFizzBuzz;
 
 for (i = 0; i < 100; i++) {
-    console.log(i)}
-    
-
+    console.log(i)
+    eleSquares.innerHTML += `<div class=".sq-number">${i}</div>`
+}
 
  /*  if (i / 3) {
         indexFizz = i;
