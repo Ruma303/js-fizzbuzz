@@ -18,30 +18,50 @@ Applica stili differenti agli elementi aggiunti al DOM nel *BONUS 1*, a seconda 
 Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot fornito in consegna.*/
 
 const eleSquares = document.querySelector('.squares');
+let i;
 let indexNum;
 let indexFizz;
 let indexBuzz;
 let indexFizzBuzz;
 
+for (i = 0; i <= 100; i++) {
+    if (i / 3) {
+        indexFizz = i;
+        console.log(indexFizz);
+        eleSquares.innerHTML += `<div class=".sq-fizz">Fizz</div>`;
+    } else if (i / 5) {
+        indexBuzz = i;
+        console.log(indexBuzz);
+        eleSquares.innerHTML += `<div class=".sq-buzz">Buzz</div>`;
+    } else if (i / 15) {
+        indexFizzBuzz = i;
+        console.log(indexFizzBuzz);
+        eleSquares.innerHTML += `<div class=".sq-fizzbuzz">FizzBuzz</div>`;
+    } else {
+        indexNum = i;
+        console.log(indexNum);
+        eleSquares.innerHTML += `<div class=".sq-number">${indexNum}</div>`;
+    }
+}
 
-// if (eleSquares / 3) { 
-    for (indexNum = 0; indexNum <= 100; indexNum++) {
+
+    // cicli for singoli
+   /* for (indexNum = 0; indexNum <= 100; indexNum++) {
         console.log(indexNum);
         eleSquares.innerHTML += `<div class=".sq-number">${indexNum}</div>`;
      } 
-    //  else if (eleSquares / 3) {
+
    for (indexFizz = 0; indexFizz<=100; indexFizz+=3) {
        console.log(indexFizz);
        eleSquares.innerHTML += `<div class=".sq-fizz">Fizz</div>`
     }
-    // } else if (eleSquares / 15) {
+
     for (indexBuzz = 0; indexBuzz<=100; indexBuzz+=5) {
         console.log(indexBuzz);
         eleSquares.innerHTML += `<div class=".sq-buzz">Buzz</div>`
         }
-    // } else {
+
     for (indexFizzBuzz = 0; indexFizzBuzz<=100; indexFizzBuzz+=15) {
         console.log(indexFizzBuzz);
         eleSquares.innerHTML += `<div class=".sq-fizzbuzz">FizzBuzz</div>`
-        }
-// }
+        }*/
