@@ -24,8 +24,9 @@ let indexFizz;
 let indexBuzz;
 let indexFizzBuzz;
 
-for (i = 0; i <= 100; i++) {
+for (i = 0; i < 100; i++) {
     console.log(i)}
+    
 
 
  /*  if (i / 3) {
