@@ -33,7 +33,7 @@ for (i = 0; i <= 100; i++) {
         indexBuzz = i;
         console.log(indexBuzz);
         eleSquares.innerHTML += `<div class=".sq-buzz">Buzz</div>`;
-    } else if (i / 15) {
+    } else if (i / 3 && i / 5) {
         indexFizzBuzz = i;
         console.log(indexFizzBuzz);
         eleSquares.innerHTML += `<div class=".sq-fizzbuzz">FizzBuzz</div>`;
