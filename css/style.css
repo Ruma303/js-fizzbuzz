@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgb(8, 59, 76);
+}
+
+h1 {
+    color:white;
+    font-size: 3rem;
+    margin: 2rem auto;
+}
+
+.container {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.squares {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.sq-number {
+    width: 1rem;
+    aspect-ratio: 1/1;
+    background-color: rgb(19, 137, 178);
+}
+
+.sq-fizz {
+    width: 1rem;
+    aspect-ratio: 1/1;
+    background-color: rgb(12, 214, 161);
+}
+
+.sq-buzz {
+    width: 1rem;
+    aspect-ratio: 1/1;
+    background-color: rgb(255, 209, 102);
+}
+
+.sq-fizzbuzz {
+    width: 1rem;
+    aspect-ratio: 1/1;
+    background-color: rgb(149, 43, 69);
+}
