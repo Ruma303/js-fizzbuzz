@@ -19,35 +19,19 @@ Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot f
 
 const eleSquares = document.querySelector('.squares');
 let i;
-let indexNum;
-let indexFizz;
-let indexBuzz;
-let indexFizzBuzz;
 
-for (i = 0; i < 100; i++) {
-    console.log(i)
-    eleSquares.innerHTML += `<div class=".sq-number">${i}</div>`
-    
-    if (i % 3 == 0) {
+for (i = 1; i <= 100; i++) {
+    if (i % 3 == 0 && i % 5 == 0) {
+        console.log(i);
+        eleSquares.innerHTML += `<div class="sq-fizzbuzz sq">FizzBuzz</div>`;
+    } else if (i % 3 == 0) {
+        console.log(i);
+        eleSquares.innerHTML += `<div class="sq-fizz sq">Fizz</div>`;
+    }  else  if (i % 5 == 0) {
+        console.log(i);
+        eleSquares.innerHTML += `<div class="sq-buzz sq">Buzz</div>`;
+    }  else {
         console.log(i)
-        eleSquares.innerHTML += `<div class=".sq-number">Fizz</div>`
-    }  
-    
-}/* else if (i / 5) {
-    indexFizz = i;
-    console.log(indexFizz);
-    eleSquares.innerHTML += `<div class=".sq-fizz">Fizz</div>`;
-    
-        indexBuzz = i;
-        console.log(indexBuzz);
-        eleSquares.innerHTML += `<div class=".sq-buzz">Buzz</div>`;
-    } else if (i / 3 && i / 5) {
-        indexFizzBuzz = i;
-        console.log(indexFizzBuzz);
-        eleSquares.innerHTML += `<div class=".sq-fizzbuzz">FizzBuzz</div>`;
-    } else {
-        indexNum = i;
-        console.log(indexNum);
-        eleSquares.innerHTML += `<div class=".sq-number">${indexNum}</div>`;
-    }*/
-
+        eleSquares.innerHTML += `<div class="sq-number sq">${i}</div>`;
+    } 
+}

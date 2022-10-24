@@ -33,26 +33,27 @@ h1 {
     gap: 1rem;
 }
 
+.sq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    aspect-ratio: 1/1;
+    padding: 1rem;
+}
+
 .sq-number {
-    width: 1rem;
-    height: 1rem;
     background-color: rgb(19, 137, 178);
 }
 
 .sq-fizz {
-    width: 1rem;
-    aspect-ratio: 1/1;
     background-color: rgb(12, 214, 161);
 }
 
 .sq-buzz {
-    width: 1rem;
-    aspect-ratio: 1/1;
     background-color: rgb(255, 209, 102);
 }
 
 .sq-fizzbuzz {
-    width: 1rem;
-    aspect-ratio: 1/1;
     background-color: rgb(149, 43, 69);
 }
