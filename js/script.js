@@ -25,7 +25,10 @@ let indexBuzz;
 let indexFizzBuzz;
 
 for (i = 0; i <= 100; i++) {
-    if (i / 3) {
+    console.log(i)}
+
+
+ /*  if (i / 3) {
         indexFizz = i;
         console.log(indexFizz);
         eleSquares.innerHTML += `<div class=".sq-fizz">Fizz</div>`;
@@ -41,27 +44,5 @@ for (i = 0; i <= 100; i++) {
         indexNum = i;
         console.log(indexNum);
         eleSquares.innerHTML += `<div class=".sq-number">${indexNum}</div>`;
-    }
-}
+    }*/
 
-
-    // cicli for singoli
-   /* for (indexNum = 0; indexNum <= 100; indexNum++) {
-        console.log(indexNum);
-        eleSquares.innerHTML += `<div class=".sq-number">${indexNum}</div>`;
-     } 
-
-   for (indexFizz = 0; indexFizz<=100; indexFizz+=3) {
-       console.log(indexFizz);
-       eleSquares.innerHTML += `<div class=".sq-fizz">Fizz</div>`
-    }
-
-    for (indexBuzz = 0; indexBuzz<=100; indexBuzz+=5) {
-        console.log(indexBuzz);
-        eleSquares.innerHTML += `<div class=".sq-buzz">Buzz</div>`
-        }
-
-    for (indexFizzBuzz = 0; indexFizzBuzz<=100; indexFizzBuzz+=15) {
-        console.log(indexFizzBuzz);
-        eleSquares.innerHTML += `<div class=".sq-fizzbuzz">FizzBuzz</div>`
-        }*/
